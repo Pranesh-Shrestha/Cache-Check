@@ -21,3 +21,6 @@ jobs:
 
       - name: List installed npm packages (full tree)
         run: npm ls --all
+
+      - name: Show npm cache directory contents
+        run: ls -R ~/.npm
