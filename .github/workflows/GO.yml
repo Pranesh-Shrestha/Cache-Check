@@ -45,6 +45,10 @@ jobs:
       - name: Install dependencies
         run: go mod download all
 
+    # 5. Optional: Verify downloaded modules
+      - name: List cached modules
+        run: ls -R ~/go/pkg/mod | head -20
+
       - name: Cleanup PSE
         if: always()
         uses: invisirisk/pse-action@latest
