@@ -39,7 +39,7 @@ jobs:
           if [ ! -f go.sum ]; then
             echo "go.sum missing, running go mod tidy..."
           fi
-          go mod tidy
+          go get
 
       - name: Build project
         run: go build ./...
