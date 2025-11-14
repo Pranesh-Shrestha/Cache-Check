@@ -21,6 +21,3 @@ jobs:
 
       - name: List installed npm packages (full tree)
         run: npm ls --all
-        
-      - name: Build
-        run: npm run build
