@@ -1,3 +1,5 @@
+module github.com/username/minimal
+
 go 1.24
 
 require (
