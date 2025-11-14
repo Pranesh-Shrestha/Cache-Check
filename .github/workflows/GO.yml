@@ -42,7 +42,7 @@ jobs:
       #    go mod tidy
 
       - name: Install dependencies
-        run: go mod tidy
+        run: go mod download
 
       - name: Build project
         run: go build ./...
